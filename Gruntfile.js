@@ -14,9 +14,9 @@ module.exports = function(grunt) {
         options: {
           engine: 'im',
           sizes: [{
-            width: 600,
-            suffix: '-im',
-            quality: 60
+            width: 1600,
+            suffix: '-large_2x',
+            quality: 30
           }]
         },
 
