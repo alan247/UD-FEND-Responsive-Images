@@ -1,22 +1,84 @@
 body {
-	font-family: sans-serif;
-	margin: 2em;
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+	margin: 0;
+}
+
+.hero {
+    background: url(../images/still_life-medium.jpg) no-repeat center bottom;
+    background-size: cover;
+    width: 100vw;
+    height: 26vh;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .4;
 }
 
 article {
 	max-width: 50em;
 	margin: 0 auto;
+	padding: 0 2em;
 }
 
 h1 {
-	width: 800px;
-	margin: 0 auto 1em;
+    margin: 0 auto;
+    text-align: center;
+    color: #f7f7f7;
+    top: 42%;
+    position: relative;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 3px 3px #544e4e;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+@media (min-width:750px){
+	.hero {
+		height: 40vh;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	p {
+		padding: 0 3em;
+	}
+}
+
+h2 {
+    font-size: 32px;
+    color: #635858;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+figure {
+	margin: 40px 0;
 }
 
 img {
 	max-width: 100%;
 }
 
-footer{
-	border-top: 2px solid #ccc;
+figcaption {
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+    font-size: 13px;
+}
+
+footer {
+    border-top: 2px solid #ccc;
+    text-align: center;
+    padding-top: 40px;
 }
